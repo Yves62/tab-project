@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+  margin: 30px 0 20px;
+}
+.container {
+  width: 40%;
+  margin: 30px auto;
+  box-shadow: 0px 0px 17px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.container .title-tab .title .title-one,
+.container .title-tab .title .title-two,
+.container .title-tab .title .title-three {
+  width: 33.33%;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.container .title-tab .title .title-one:hover,
+.container .title-tab .title .title-two:hover,
+.container .title-tab .title .title-three:hover {
+  background-color: rgba(220, 20, 60, 0.506);
+}
+
+.active {
+  color: white;
+  background-color: crimson;
+  pointer-events: none;
+}
+
+.container .content {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.container .content .text-two,
+.container .content .text-three {
+  display: none;
+}
+
+.container .content p:first-child {
+  text-align: center;
+}
+.container .content .txt {
+  text-align: justify;
+}
